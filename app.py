@@ -18,4 +18,5 @@ def get_quote():
     return jsonify(random.choice(quotes))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=10000)
+    
